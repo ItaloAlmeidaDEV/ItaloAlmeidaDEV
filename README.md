@@ -1,65 +1,119 @@
-<!-- ===================== BANNER ===================== -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>11 APOSTLES</title>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:203a43&height=200&section=header&text=Italo%20de%20Almeida&fontSize=45&fontColor=ffffff&animation=fadeIn&desc=Backend%20Java%20Student&descAlignY=65" />
-</p>
+<style>
 
----
+/* cores */
+:root{
+--blue:#4f6df5;
+--black:#000;
+--white:#fff;
+}
 
-# Hi 👋, I'm Italo de Almeida
+/* fundo */
+body{
+margin:0;
+background:var(--black);
+color:var(--white);
+font-family:Arial, Helvetica, sans-serif;
+text-align:center;
+}
 
-### Backend Java Student | 14 years old
+/* header */
+header{
+padding:30px;
+font-weight:bold;
+letter-spacing:4px;
+}
 
----
+/* logo */
+.logo{
+margin-top:120px;
+}
 
-## 👨‍💻 About Me
+.logo img{
+max-width:420px;
+width:90%;
+}
 
-- 🎓 Backend Java student (14 years old)  
-- ☕ Studying **Java programming, Spring Boot, Quarkus and REST APIs**  
-- 🌱 Learning **authentication, security and databases**  
-- 🧠 Focused on improving **logic, clean code and backend fundamentals**  
-- 🚀 Building my foundation to become a professional backend developer  
+/* título */
+h1{
+font-size:48px;
+margin-top:20px;
+letter-spacing:6px;
+}
 
----
+/* botão */
+.btn{
+display:inline-block;
+margin-top:40px;
+background:var(--blue);
+padding:15px 40px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+transition:.3s;
+}
 
-## 🧠 Tech Stack
+.btn:hover{
+transform:scale(1.05);
+}
 
-### 🔹 Backend & Microservices
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![Quarkus](https://img.shields.io/badge/Quarkus-EE0000?style=for-the-badge&logo=quarkus&logoColor=white)
-![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
-![Kafka](https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+/* faixa animada */
+.apostle-bar{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:var(--blue);
+overflow:hidden;
+white-space:nowrap;
+}
 
-### 🔹 Database
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+.apostle-bar span{
+display:inline-block;
+padding-left:100%;
+font-weight:bold;
+font-size:22px;
+color:white;
+animation:scroll 15s linear infinite;
+}
 
-### 🔹 Tools
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+@keyframes scroll{
+0%{transform:translateX(0);}
+100%{transform:translateX(-100%);}
+}
 
----
+</style>
+</head>
 
-## 📫 Connect with Me
+<body>
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:italoalmeidas2011@gmail.com)  
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5519989932985)
+<header>
+11 APOSTLES
+</header>
 
----
+<div class="logo">
+<img src="logo.png">
+<h1>11 APOSTLES</h1>
 
-## 📘 Current Focus
+<p>UMA MARCA PARA OS VALENTES</p>
 
-- Java fundamentals  
-- Object-Oriented Programming (OOP)  
-- REST APIs  
-- Spring Boot & Quarkus basics  
-- SQL and database modeling  
-- Microservices with RabbitMQ and Kafka  
+<a class="btn" href="#">
+TORNE-SE UM APÓSTOLO
+</a>
+</div>
 
+<div class="apostle-bar">
+<span>
+✦ TORNE-SE UM APÓSTOLO ✦ TORNE-SE UM APÓSTOLO ✦ TORNE-SE UM APÓSTOLO ✦ TORNE-SE UM APÓSTOLO
+</span>
+</div>
+
+</body>
+</html>
